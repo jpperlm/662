@@ -2,9 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e6dbc6e7-437e-4ad5-9819-ba03e7198fe1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Perlman_BlackJack_Tutor/META-INF/Perlman_BlackJack_Tutor.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Perlman_BlackJack_Tutor/blackjack/BlackJackTable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Perlman_BlackJack_Tutor/blackjack/Card.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Perlman_BlackJack_Tutor/blackjack/Deck.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Perlman_BlackJack_Tutor/blackjack/Inputable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Perlman_BlackJack_Tutor/blackjack/Player.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Perlman_BlackJack_Tutor/blackjack/RandomPlayer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Perlman_BlackJack_Tutor/blackjack/Seat.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Perlman_BlackJack_Tutor/blackjack/Shoe.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Perlman_BlackJack_Tutor/blackjack/Table.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Perlman_BlackJack_Tutor/blackjack/Template.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Perlman_BlackJack_Tutor/blackjack/Visualize.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Perlman_BlackJack_Tutor/main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Perlman_BlackJack_Tutor/test/BlackJackTableTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Perlman_BlackJack_Tutor/test/CardTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Perlman_BlackJack_Tutor/test/DeckTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Perlman_BlackJack_Tutor/test/PlayerTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Perlman_BlackJack_Tutor/test/SeatTest.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -205,22 +222,22 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="458" y="233" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1440.900@0.0.1440.900" timestamp="1579989114142" />
-    <state width="1398" height="250" key="GridCell.Tab.0.bottom" timestamp="1580146399927">
+    <state width="1398" height="250" key="GridCell.Tab.0.bottom" timestamp="1580146512194">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="250" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1580146399927" />
-    <state width="1398" height="250" key="GridCell.Tab.0.center" timestamp="1580146399925">
+    <state width="1398" height="250" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1580146512194" />
+    <state width="1398" height="250" key="GridCell.Tab.0.center" timestamp="1580146512193">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="250" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1580146399925" />
-    <state width="1398" height="250" key="GridCell.Tab.0.left" timestamp="1580146399925">
+    <state width="1398" height="250" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1580146512193" />
+    <state width="1398" height="250" key="GridCell.Tab.0.left" timestamp="1580146512193">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="250" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1580146399925" />
-    <state width="1398" height="250" key="GridCell.Tab.0.right" timestamp="1580146399926">
+    <state width="1398" height="250" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1580146512193" />
+    <state width="1398" height="250" key="GridCell.Tab.0.right" timestamp="1580146512194">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="250" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1580146399926" />
+    <state width="1398" height="250" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1580146512194" />
     <state width="1398" height="303" key="GridCell.Tab.1.bottom" timestamp="1580073827332">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
