@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e6dbc6e7-437e-4ad5-9819-ba03e7198fe1" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1WtADKi7xDaPtc2BxMMwGG8ogNq" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="create.test.in.the.same.root" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="blackjack" />
+      <recent name="blackjack.test" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="test" />
+      <recent name="blackjack" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/test" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.main">
+    <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main" />
+      <module name="Perlman_BlackJack_Tutor" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Basic" type="JUnit" factoryName="JUnit">
+      <module name="Perlman_BlackJack_Tutor" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="directory" />
+      <option name="PARAMETERS" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="wholeProject" />
+      </option>
+      <dir value="$PROJECT_DIR$/src/test" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BlackJackTableTest.removePlayer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Perlman_BlackJack_Tutor" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.BlackJackTableTest" />
+      <option name="METHOD_NAME" value="removePlayer" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BlackJackTableTest.sitPlayer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Perlman_BlackJack_Tutor" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.BlackJackTableTest" />
+      <option name="METHOD_NAME" value="sitPlayer" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SeatTest.addAndRemovePlayer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Perlman_BlackJack_Tutor" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.SeatTest" />
+      <option name="METHOD_NAME" value="addAndRemovePlayer" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SeatTest.addPlayerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Perlman_BlackJack_Tutor" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.SeatTest" />
+      <option name="METHOD_NAME" value="addPlayerTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.main" />
+      <item itemvalue="JUnit.Basic" />
+      <item itemvalue="JUnit.BlackJackTableTest.removePlayer" />
+      <item itemvalue="JUnit.BlackJackTableTest.sitPlayer" />
+      <item itemvalue="JUnit.SeatTest.addAndRemovePlayer" />
+      <item itemvalue="JUnit.SeatTest.addPlayerTest" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.main" />
+        <item itemvalue="JUnit.BlackJackTableTest.removePlayer" />
+        <item itemvalue="JUnit.BlackJackTableTest.sitPlayer" />
+        <item itemvalue="JUnit.SeatTest.addAndRemovePlayer" />
+        <item itemvalue="JUnit.SeatTest.addPlayerTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e6dbc6e7-437e-4ad5-9819-ba03e7198fe1" name="Default Changelist" comment="" />
+      <created>1579958396741</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1579958396741</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="295" y="110" key="#Basic" timestamp="1579989690120">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="295" y="110" key="#Basic/0.0.1440.900@0.0.1440.900" timestamp="1579989690120" />
+    <state x="320" y="77" key="#Project_Structure" timestamp="1579988606288">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="320" y="77" key="#Project_Structure/0.0.1440.900@0.0.1440.900" timestamp="1579988606288" />
+    <state x="320" y="92" key="#Project_Structure/0.23.1440.808@0.23.1440.808" timestamp="1579958426960" />
+    <state x="270" y="110" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1579989536883">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="270" y="110" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1579989536883" />
+    <state x="464" y="260" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1579958731355">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="464" y="260" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1579958731355" />
+    <state x="458" y="233" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1579989114142">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="458" y="233" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1440.900@0.0.1440.900" timestamp="1579989114142" />
+    <state width="1398" height="250" key="GridCell.Tab.0.bottom" timestamp="1580091002925">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="250" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1580091002925" />
+    <state width="1398" height="250" key="GridCell.Tab.0.center" timestamp="1580091002924">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="250" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1580091002924" />
+    <state width="1398" height="250" key="GridCell.Tab.0.left" timestamp="1580091002924">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="250" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1580091002924" />
+    <state width="1398" height="250" key="GridCell.Tab.0.right" timestamp="1580091002925">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="250" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1580091002925" />
+    <state width="1398" height="303" key="GridCell.Tab.1.bottom" timestamp="1580073827332">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="303" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1580073827332" />
+    <state width="1398" height="303" key="GridCell.Tab.1.center" timestamp="1580073827331">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="303" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1580073827331" />
+    <state width="1398" height="303" key="GridCell.Tab.1.left" timestamp="1580073827330">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="303" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1580073827330" />
+    <state width="1398" height="303" key="GridCell.Tab.1.right" timestamp="1580073827331">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="303" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1580073827331" />
+    <state x="399" y="263" key="com.intellij.ide.util.TipDialog" timestamp="1579970953070">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="399" y="263" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1579970953070" />
+    <state x="399" y="259" key="com.intellij.ide.util.TipDialog/0.23.1440.808@0.23.1440.808" timestamp="1579958405875" />
+    <state x="432" y="351" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1579989077302">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="432" y="351" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1440.900@0.0.1440.900" timestamp="1579989077302" />
+    <state x="499" y="184" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1579989556467">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="499" y="184" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1440.900@0.0.1440.900" timestamp="1579989556467" />
+    <state x="386" y="85" width="667" height="729" key="find.popup" timestamp="1579993119254">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="386" y="85" width="667" height="729" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1579993119254" />
+    <state x="114" y="72" key="new project wizard" timestamp="1579988536608">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="114" y="72" key="new project wizard/0.0.1440.900@0.0.1440.900" timestamp="1579988536608" />
+    <state x="385" y="210" width="670" height="675" key="run.anything.popup" timestamp="1579988603667">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="385" y="210" width="670" height="675" key="run.anything.popup/0.0.1440.900@0.0.1440.900" timestamp="1579988603667" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1580046269706">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1580046269706" />
+  </component>
+</project>
