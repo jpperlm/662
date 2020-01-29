@@ -1,6 +1,9 @@
 package blackjack;
 
 import java.util.ArrayList;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
 
 public class Deck {
     ArrayList<Card> cards = new ArrayList<Card>();
@@ -11,12 +14,28 @@ public class Deck {
 
     private void reset(){
         this.cards.clear();
-        int[] values = {1,2,3,4,5,6,7,8,9,10,11,12,13};
-        String[] suits=  {"H", "D", "S", "C"};
-        for (String suit: suits) {
-            for (int val: values) {
-                this.cards.add(new Card(val, suit));
+        try {
+            Scanner scanner_suits = new Scanner(new File("/Users/jasonperlman/IdeaProjects/Perlman_BlackJack_Tutor/src/blackjack/suits.csv"));
+            Scanner scanner_cards = new Scanner(new File("/Users/jasonperlman/IdeaProjects/Perlman_BlackJack_Tutor/src/blackjack/cards.csv"));
+            ArrayList<String[]> suits = new ArrayList<>();
+            ArrayList<String[]> cards = new ArrayList<>();
+            while (scanner_suits.hasNextLine()) {
+                suits.add(scanner_suits.nextLine().split(","));
             }
+            scanner_suits.close();
+            while (scanner_cards.hasNextLine()) {
+                cards.add(scanner_cards.nextLine().split(","));
+            }
+            scanner_cards.close();
+            for (String[] suit_items: suits){
+                String suit_short = suit_items[1];
+                String suit_long = suit_items[2];
+                for (String[] items: cards) {
+                    this.cards.add(new Card(Integer.parseInt(items[0]), items[1], items[2], suit_short, suit_long));
+                }
+            }
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
         }
     }
 

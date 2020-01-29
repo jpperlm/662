@@ -27,10 +27,47 @@ public class BlackJackTable extends Table implements Visualize {
     };
 
     public void play() {
+        this.printSpacer();
+        this.printSpacer();
+        this.printAnnouncement("Starting New Game!");
+        this.displaySeats();
+        this.waitInput();
+
         this.shoe = new Shoe(3);
-//        this.displaySeats();
-//        Boolean r = this.promptSeatChange();
-    };
+
+        while (this.shoe.isPlayable()){
+            this.clearHand();
+            this.dealHand();
+            this.displaySeatsWithCards();
+            this.waitInput();
+        }
+    }
+
+    private void clearHand() {
+        for (Seat s: this.seats) {
+            s.clearCards();
+        }
+        this.dealer.clearCards();
+    }
+
+    private void dealHand() {
+        this.dealToSeats();
+        this.dealToDealer();
+        this.dealToSeats();
+        this.dealToDealer();
+    }
+
+    private void dealToSeats() {
+        for (Seat s: this.seats) {
+            if (s.occupied){
+                this.shoe.dealCard(s);
+            }
+        }
+    }
+
+    private void dealToDealer() {
+        this.shoe.dealCard(this.dealer);
+    }
 
     public Boolean isReady() {
         Integer player_count = this.getCurrentSeatedPlayerCount();
@@ -44,6 +81,31 @@ public class BlackJackTable extends Table implements Visualize {
         this.printSpacer();
         this.printTitle("Seats");
         this.printHorizontalOptions(this.seats.toArray());
+        this.printSpacer();
+    }
+    public void displaySeatsWithCards() {
+        this.printSpacer();
+        this.printTitle("Current Cards");
+        this.printHorizontalOptions(this.seats.toArray());
+
+
+        Integer counter = 0;
+        Boolean still_cards = true;
+        while (still_cards) {
+            still_cards = false;
+            ArrayList<Card> current_cards_for_row = new ArrayList<>();
+            for (Seat s: this.seats) {
+                Card card = s.getCard(counter);
+                if (card != null) {
+                    still_cards = true;
+                }
+                current_cards_for_row.add(card);
+            }
+            if (still_cards) {
+                this.printHorizontalOptions(current_cards_for_row.toArray());
+            }
+            counter++;
+        }
         this.printSpacer();
     }
 

@@ -25,6 +25,17 @@ public class Seat {
         this.cards.clear();
     }
 
+    public void addCard(Card c) {
+        this.cards.add(c);
+    }
+
+    public Card getCard(Integer i) {
+        if (this.cards.size() > i) {
+            return this.cards.get(i);
+        }
+        return null;
+    }
+
     public void makeDealer() {
         this.dealer = true;
     }
@@ -36,6 +47,7 @@ public class Seat {
             return "Empty";
         }
     }
+
 
 
 }

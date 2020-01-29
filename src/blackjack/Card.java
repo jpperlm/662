@@ -2,23 +2,25 @@ package blackjack;
 
 public class Card {
     Integer value;
-    String suit;
+    String short_value;
+    String long_value;
+    String short_suit;
+    String long_suit;
 
-    public Card(Integer v, String s){
-        this.setValue(v);
-        this.setSuit(s);
-    }
-
-    public void setValue(Integer v) {
+    public Card(Integer v, String sv, String lv, String ss, String ls){
         this.value = v;
+        this.short_value = sv;
+        this.long_value = lv;
+        this.short_suit = ss;
+        this.long_suit = ls;
     }
 
-    public void setSuit(String s) {
-        this.suit = s;
-    }
 
     public String getSuit() {
-        return this.suit;
+        return this.short_suit;
+    }
+    public String fullSuit() {
+        return this.long_suit;
     }
 
     public Integer getValue() {
@@ -35,47 +37,13 @@ public class Card {
     }
 
     public String faceValue() {
-        switch (this.value) {
-            case 1:
-                return "A";
-            case 2:
-                return "2";
-            case 3:
-                return "3";
-            case 4:
-                return "4";
-            case 5:
-                return "5";
-            case 6:
-                return "6";
-            case 7:
-                return "7";
-            case 8:
-                return "8";
-            case 9:
-                return "9";
-            case 10:
-                return "10";
-            case 11:
-                return "J";
-            case 12:
-                return "Q";
-            case 13:
-                return "K";
-            default:
-                return "";
-        }
+        return this.short_value;
+    }
+    public String faceLongValue() {
+        return this.long_value;
     }
 
-    public String fullSuit() {
-        switch (this.suit) {
-            case "H": return "Hearts";
-            case "D": return "Diamonds";
-            case "S": return "Spades";
-            case "C": return "Clubs";
-            default: return "";
-        }
-    }
+
     public Integer dummyTest() {
         return 1;
     }

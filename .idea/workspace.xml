@@ -2,26 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e6dbc6e7-437e-4ad5-9819-ba03e7198fe1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/blackjack/UserPlayer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/blackjack/cards.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/blackjack/suits.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/ShoeTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Perlman_BlackJack_Tutor/META-INF/Perlman_BlackJack_Tutor.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Perlman_BlackJack_Tutor/blackjack/BlackJackTable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Perlman_BlackJack_Tutor/blackjack/Card.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Perlman_BlackJack_Tutor/blackjack/Deck.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Perlman_BlackJack_Tutor/blackjack/Inputable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Perlman_BlackJack_Tutor/blackjack/Player.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Perlman_BlackJack_Tutor/blackjack/RandomPlayer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Perlman_BlackJack_Tutor/blackjack/Seat.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Perlman_BlackJack_Tutor/blackjack/Shoe.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Perlman_BlackJack_Tutor/blackjack/Table.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Perlman_BlackJack_Tutor/blackjack/Template.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Perlman_BlackJack_Tutor/blackjack/Visualize.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Perlman_BlackJack_Tutor/main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Perlman_BlackJack_Tutor/test/BlackJackTableTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Perlman_BlackJack_Tutor/test/CardTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Perlman_BlackJack_Tutor/test/DeckTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Perlman_BlackJack_Tutor/test/PlayerTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Perlman_BlackJack_Tutor/test/SeatTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blackjack/BlackJackTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/blackjack/BlackJackTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blackjack/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/blackjack/Card.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blackjack/Deck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/blackjack/Deck.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blackjack/Seat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/blackjack/Seat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blackjack/Shoe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/blackjack/Shoe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blackjack/Visualize.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/blackjack/Visualize.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/CardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/CardTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +51,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="create.test.in.the.same.root" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/blackjack" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -70,6 +64,9 @@
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/blackjack" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="test" />
       <recent name="blackjack" />
@@ -79,7 +76,7 @@
       <recent name="$PROJECT_DIR$/test" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.main">
+  <component name="RunManager" selected="JUnit.CardTest">
     <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="main" />
       <module name="Perlman_BlackJack_Tutor" />
@@ -134,6 +131,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CardTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Perlman_BlackJack_Tutor" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.CardTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SeatTest.addAndRemovePlayer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Perlman_BlackJack_Tutor" />
       <extension name="coverage">
@@ -150,37 +162,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SeatTest.addPlayerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Perlman_BlackJack_Tutor" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="test" />
-      <option name="MAIN_CLASS_NAME" value="test.SeatTest" />
-      <option name="METHOD_NAME" value="addPlayerTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="Application.main" />
       <item itemvalue="JUnit.Basic" />
-      <item itemvalue="JUnit.SeatTest.addPlayerTest" />
       <item itemvalue="JUnit.SeatTest.addAndRemovePlayer" />
       <item itemvalue="JUnit.BlackJackTableTest.sitPlayer" />
       <item itemvalue="JUnit.BlackJackTableTest.removePlayer" />
+      <item itemvalue="JUnit.CardTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CardTest" />
         <item itemvalue="Application.main" />
         <item itemvalue="JUnit.BlackJackTableTest.removePlayer" />
         <item itemvalue="JUnit.BlackJackTableTest.sitPlayer" />
         <item itemvalue="JUnit.SeatTest.addAndRemovePlayer" />
-        <item itemvalue="JUnit.SeatTest.addPlayerTest" />
       </list>
     </recent_temporary>
   </component>
@@ -222,22 +218,26 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="458" y="233" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1440.900@0.0.1440.900" timestamp="1579989114142" />
-    <state width="1398" height="250" key="GridCell.Tab.0.bottom" timestamp="1580146512194">
+    <state x="318" y="52" key="CommitChangelistDialog2" timestamp="1580312212425">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="250" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1580146512194" />
-    <state width="1398" height="250" key="GridCell.Tab.0.center" timestamp="1580146512193">
+    <state x="318" y="52" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1580312212425" />
+    <state width="1398" height="250" key="GridCell.Tab.0.bottom" timestamp="1580336856639">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="250" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1580146512193" />
-    <state width="1398" height="250" key="GridCell.Tab.0.left" timestamp="1580146512193">
+    <state width="1398" height="250" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1580336856639" />
+    <state width="1398" height="250" key="GridCell.Tab.0.center" timestamp="1580336856638">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="250" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1580146512193" />
-    <state width="1398" height="250" key="GridCell.Tab.0.right" timestamp="1580146512194">
+    <state width="1398" height="250" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1580336856638" />
+    <state width="1398" height="250" key="GridCell.Tab.0.left" timestamp="1580336856637">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="250" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1580146512194" />
+    <state width="1398" height="250" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1580336856637" />
+    <state width="1398" height="250" key="GridCell.Tab.0.right" timestamp="1580336856638">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="250" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1580336856638" />
     <state width="1398" height="303" key="GridCell.Tab.1.bottom" timestamp="1580073827332">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -267,10 +267,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="499" y="184" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1440.900@0.0.1440.900" timestamp="1579989556467" />
-    <state x="386" y="85" width="667" height="729" key="find.popup" timestamp="1579993119254">
+    <state x="386" y="85" width="667" height="729" key="find.popup" timestamp="1580311653462">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="386" y="85" width="667" height="729" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1579993119254" />
+    <state x="386" y="85" width="667" height="729" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1580311653462" />
     <state x="114" y="72" key="new project wizard" timestamp="1579988536608">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

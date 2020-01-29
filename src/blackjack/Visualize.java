@@ -1,4 +1,5 @@
 package blackjack;
+import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -13,6 +14,11 @@ public interface Visualize {
    public default void printTitle(String t) {
       System.out.println(this.title("-", t));
    }
+
+   public default void printAnnouncement(String t) {
+      System.out.println(this.promptTitle("*", t));
+   }
+
    public default void printBasic(String t) {
       System.out.println(this.basic(t));
    }
@@ -30,7 +36,9 @@ public interface Visualize {
 //       Downcasting example
          if (opt instanceof Seat) {
             item = ((Seat)opt).getPlayer();
-         }else {
+         }else if (opt== null) {
+            item = "";
+         } else {
             item = opt.toString();
          }
          if (item.length() > maxSectionLength ){
@@ -50,6 +58,13 @@ public interface Visualize {
       }
       System.out.println(sb.toString());
    }
+
+   public default void waitInput() {
+      Scanner input = new Scanner(System.in);
+      System.out.print("Press enter to continue...");
+      input.nextLine();
+   }
+
    public default Integer waitResponse(Object[] options) {
       return this.waitResponse(options, "");
    }
