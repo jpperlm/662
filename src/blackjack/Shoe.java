@@ -41,7 +41,7 @@ public class Shoe {
     //    Actions
     public void dealCard(Seat s) {
         s.addCard(cards.get(this.currentCard));
-        System.out.println("Dealing Card " + cards.get(this.currentCard) );
+//        System.out.println("Dealing Card " + cards.get(this.currentCard) );
         this.currentCard++;
     }
 
@@ -50,7 +50,6 @@ public class Shoe {
             System.out.println(c);
         }
     }
-
 
     private void shuffle() {
         Collections.shuffle(this.cards);

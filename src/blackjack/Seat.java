@@ -48,6 +48,10 @@ public class Seat {
         }
     }
 
+    public Player getPlayerObject() {
+        return this.player;
+    }
+
 
 
 }

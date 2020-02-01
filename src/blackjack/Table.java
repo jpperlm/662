@@ -8,7 +8,7 @@ public abstract class Table {
     Integer minSeats;
     ArrayList<Seat> seats = new ArrayList<Seat>();
 
-    public abstract void sit(Player p, Integer i);
+    public abstract void sit(Player p, Integer i) throws MaxSeatExeception;
     public abstract void leave(Integer i);
     public abstract void play();
     public abstract void displaySeats();
