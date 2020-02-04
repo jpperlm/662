@@ -3,6 +3,8 @@ package blackjack;
 import java.util.ArrayList;
 import java.util.Random;
 
+// Represents a User who will be able to give input
+// Currently not setup, copied from Random Player
 public class UserPlayer extends Player {
 
     public UserPlayer(String name, Double money) {

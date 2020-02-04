@@ -1,5 +1,6 @@
 package blackjack;
 
+// Custom Exception for when a player tries to occupy too many seats
 public class MaxSeatExeception extends Exception {
     int max;
     MaxSeatExeception(int num) {

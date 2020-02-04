@@ -5,12 +5,17 @@ import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
+// Interface for all visualizations and for interactions with user
 public interface Visualize {
 
    Integer defaultLength = 80;
 
    default void printSpacer() {
       System.out.println(this.dashes( "-"));
+   }
+
+   default void printSpacer(String s) {
+      System.out.println(this.dashes( s));
    }
 
    default void printTitle(String t) {
@@ -21,6 +26,11 @@ public interface Visualize {
       System.out.println(this.promptTitle("*", t));
    }
 
+   default  void printStatus(String t) {
+      this.printSpacer("*");
+      this.printAnnouncement(t);
+      this.printSpacer("*");
+   }
    default void printBasic(String t) {
       System.out.println(this.basic(t));
    }

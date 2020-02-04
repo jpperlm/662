@@ -2,17 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e6dbc6e7-437e-4ad5-9819-ba03e7198fe1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/blackjack/MaxSeatExeception.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Perlman_BlackJack_Tutor.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Perlman_BlackJack_Tutor.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/blackjack/BlackJackTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/blackjack/BlackJackTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blackjack/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/blackjack/Card.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blackjack/Deck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/blackjack/Deck.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blackjack/Inputable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blackjack/MaxSeatExeception.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/blackjack/MaxSeatExeception.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blackjack/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/blackjack/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blackjack/RandomPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/blackjack/RandomPlayer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/blackjack/Seat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/blackjack/Seat.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/blackjack/Shoe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/blackjack/Shoe.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/blackjack/Table.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/blackjack/Table.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blackjack/Template.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/blackjack/Template.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blackjack/UserPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/blackjack/UserPlayer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/blackjack/Visualize.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/blackjack/Visualize.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/BlackJackTableTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/BlackJackTableTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/ShoeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/ShoeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/CardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/CardTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/DeckTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/DeckTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/PlayerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/PlayerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +82,7 @@
       <recent name="$PROJECT_DIR$/src/blackjack" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.main">
+  <component name="RunManager" selected="JUnit.Basic">
     <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="main" />
       <module name="Perlman_BlackJack_Tutor" />
@@ -220,22 +228,22 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="318" y="52" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1580312212425" />
-    <state width="1398" height="271" key="GridCell.Tab.0.bottom" timestamp="1580572608173">
+    <state width="1398" height="330" key="GridCell.Tab.0.bottom" timestamp="1580777681991">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="271" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1580572608173" />
-    <state width="1398" height="271" key="GridCell.Tab.0.center" timestamp="1580572608170">
+    <state width="1398" height="330" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1580777681991" />
+    <state width="1398" height="330" key="GridCell.Tab.0.center" timestamp="1580777681990">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="271" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1580572608170" />
-    <state width="1398" height="271" key="GridCell.Tab.0.left" timestamp="1580572608169">
+    <state width="1398" height="330" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1580777681990" />
+    <state width="1398" height="330" key="GridCell.Tab.0.left" timestamp="1580777681989">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="271" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1580572608169" />
-    <state width="1398" height="271" key="GridCell.Tab.0.right" timestamp="1580572608172">
+    <state width="1398" height="330" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1580777681989" />
+    <state width="1398" height="330" key="GridCell.Tab.0.right" timestamp="1580777681990">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="271" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1580572608172" />
+    <state width="1398" height="330" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1580777681990" />
     <state width="1398" height="303" key="GridCell.Tab.1.bottom" timestamp="1580073827332">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

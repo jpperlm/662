@@ -2,11 +2,10 @@ package test;
 import blackjack.Card;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
+// Most functions in this class are getters and don't need tests.
+// The major important function is the getCountValue and I am testing
+//  the different possible count values
 class CardTest {
-    @Test
-    public void test() {
-        assertEquals(1, new Card(1, "A", "Ace", "H", "Hearts").dummyTest());
-    }
     @Test
     public void getCountValueTest() {
         Card c_1 = new  Card(5, "5", "Five", "H", "Hearts");

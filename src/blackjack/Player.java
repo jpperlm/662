@@ -2,6 +2,8 @@ package blackjack;
 
 import java.util.ArrayList;
 
+// Represents a Player
+// Needs to be fleshed out more
 public class Player {
     String name;
     Double money;

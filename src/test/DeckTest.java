@@ -13,7 +13,4 @@ class DeckTest {
         assertEquals(d.cards().size(), 52);
         assertEquals(d.cards().get(0) instanceof Card, true);
     }
-
-
-
 }

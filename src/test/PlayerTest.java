@@ -12,6 +12,5 @@ class PlayerTest {
         assertEquals(p.getMoney(), 100.0);
         p.makeBet(10.0);
         assertEquals(p.getMoney(), 90.0);
-
     }
 }

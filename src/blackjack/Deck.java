@@ -5,6 +5,11 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
+// Represents a Deck (of cards)
+// A deck typically has 52 cards but this is customizable based
+//  from the two files cards.csv and suits.csv.
+// Potentially break this into a parent or abstract class and then
+//  have a `RegularDeck` child class that is made up of 52 cards
 public class Deck {
     ArrayList<Card> cards = new ArrayList<Card>();
 
@@ -12,6 +17,7 @@ public class Deck {
         this.reset();
     }
 
+    // Clears the cards from the Deck and re-initializes them from the specified files
     private void reset(){
         this.cards.clear();
         try {
@@ -38,7 +44,7 @@ public class Deck {
             e.printStackTrace();
         }
     }
-
+    // Getters
     public ArrayList<Card> cards() {
         return this.cards;
     }

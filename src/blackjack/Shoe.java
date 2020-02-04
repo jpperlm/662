@@ -3,6 +3,8 @@ package blackjack;
 import java.util.ArrayList;
 import java.util.Collections;
 
+// Represents a Shoe (a blackjack term)
+// A shoe is a shuffled set of decks, typically 1-8 decks
 public class Shoe {
     Integer numDecks;
     Integer currentCard = 0;
@@ -25,6 +27,9 @@ public class Shoe {
         return this.cards;
     }
 
+    // Gets the current Count of the shoe
+    // The count is determined by the count values of the cards which have been played
+    // Played cards are the cards in the array before the currentCard flag
     public int count() {
         int count = 0;
         for (int i = 0; i < this.currentCard; ++i) {
@@ -33,15 +38,17 @@ public class Shoe {
         return count;
     }
 
+    // If a shoe has less than half cards remaining, it is not playable
     public Boolean isPlayable() {
         return this.currentCard < this.cards.size() / 2;
     }
 
 
     //    Actions
+
+    // Deals a card to the Seat passed thru the params
     public void dealCard(Seat s) {
         s.addCard(cards.get(this.currentCard));
-//        System.out.println("Dealing Card " + cards.get(this.currentCard) );
         this.currentCard++;
     }
 
@@ -51,11 +58,13 @@ public class Shoe {
         }
     }
 
+    // Shuffles the entire shoe (cards)
     private void shuffle() {
         Collections.shuffle(this.cards);
         this.currentCard = 0;
     }
 
+    // Resets the shoe
     private void resetDecks(){
         this.decks.clear();
         this.cards.clear();
