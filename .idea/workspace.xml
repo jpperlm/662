@@ -2,25 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e6dbc6e7-437e-4ad5-9819-ba03e7198fe1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/blackjack/History.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/blackjack/history.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/HistoryTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/blackjack/BlackJackTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/blackjack/BlackJackTable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/blackjack/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/blackjack/Card.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/blackjack/Deck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/blackjack/Deck.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blackjack/Inputable.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blackjack/MaxSeatExeception.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/blackjack/MaxSeatExeception.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/blackjack/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/blackjack/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/blackjack/RandomPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/blackjack/RandomPlayer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/blackjack/Seat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/blackjack/Seat.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/blackjack/Shoe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/blackjack/Shoe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blackjack/Table.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/blackjack/Table.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blackjack/Template.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/blackjack/Template.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/blackjack/UserPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/blackjack/UserPlayer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/blackjack/Visualize.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/blackjack/Visualize.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blackjack/cards.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/blackjack/cards.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/BlackJackTableTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/BlackJackTableTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/CardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/CardTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/DeckTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/DeckTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/PlayerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/PlayerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/ShoeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/ShoeTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,22 +65,22 @@
       <recent name="blackjack" />
       <recent name="blackjack.test" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src" />
-      <recent name="$PROJECT_DIR$/test" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="test" />
-      <recent name="blackjack" />
-    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/blackjack" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="test" />
+      <recent name="blackjack" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/test" />
+    </key>
   </component>
-  <component name="RunManager" selected="JUnit.Basic">
+  <component name="RunManager" selected="Application.main">
     <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="main" />
       <module name="Perlman_BlackJack_Tutor" />
@@ -171,8 +169,8 @@
     <list>
       <item itemvalue="Application.main" />
       <item itemvalue="JUnit.Basic" />
-      <item itemvalue="JUnit.BlackJackTableTest.sitPlayer" />
       <item itemvalue="JUnit.BlackJackTableTest.removePlayer" />
+      <item itemvalue="JUnit.BlackJackTableTest.sitPlayer" />
       <item itemvalue="JUnit.CardTest" />
       <item itemvalue="JUnit.ShoeTest.testCountWorks" />
     </list>
@@ -228,22 +226,22 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="318" y="52" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1580312212425" />
-    <state width="1398" height="330" key="GridCell.Tab.0.bottom" timestamp="1580777681991">
+    <state width="1398" height="692" key="GridCell.Tab.0.bottom" timestamp="1581455697887">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="330" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1580777681991" />
-    <state width="1398" height="330" key="GridCell.Tab.0.center" timestamp="1580777681990">
+    <state width="1398" height="692" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1581455697887" />
+    <state width="1398" height="692" key="GridCell.Tab.0.center" timestamp="1581455697886">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="330" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1580777681990" />
-    <state width="1398" height="330" key="GridCell.Tab.0.left" timestamp="1580777681989">
+    <state width="1398" height="692" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1581455697886" />
+    <state width="1398" height="692" key="GridCell.Tab.0.left" timestamp="1581455697885">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="330" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1580777681989" />
-    <state width="1398" height="330" key="GridCell.Tab.0.right" timestamp="1580777681990">
+    <state width="1398" height="692" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1581455697885" />
+    <state width="1398" height="692" key="GridCell.Tab.0.right" timestamp="1581455697886">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="330" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1580777681990" />
+    <state width="1398" height="692" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1581455697886" />
     <state width="1398" height="303" key="GridCell.Tab.1.bottom" timestamp="1580073827332">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -273,10 +271,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="499" y="184" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1440.900@0.0.1440.900" timestamp="1579989556467" />
-    <state x="386" y="85" width="667" height="729" key="find.popup" timestamp="1580568288448">
+    <state x="386" y="85" width="667" height="729" key="find.popup" timestamp="1581201201234">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="386" y="85" width="667" height="729" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1580568288448" />
+    <state x="386" y="85" width="667" height="729" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1581201201234" />
     <state x="114" y="72" key="new project wizard" timestamp="1579988536608">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -285,10 +283,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="385" y="210" width="670" height="675" key="run.anything.popup/0.0.1440.900@0.0.1440.900" timestamp="1579988603667" />
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1580046269706">
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1581113495377">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1580046269706" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1581113495377" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

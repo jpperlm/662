@@ -37,7 +37,11 @@ public class Deck {
                 String suit_short = suit_items[1];
                 String suit_long = suit_items[2];
                 for (String[] items: cards) {
-                    this.cards.add(new Card(Integer.parseInt(items[0]), items[1], items[2], suit_short, suit_long));
+                    ArrayList<Integer> act = new ArrayList<>();
+                    for (String val: items[3].split("/") ){
+                        act.add(Integer.parseInt(val));
+                    }
+                    this.cards.add(new Card(Integer.parseInt(items[0]), items[1], items[2], suit_short, suit_long, act));
                 }
             }
         } catch (FileNotFoundException e) {

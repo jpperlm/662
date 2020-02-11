@@ -1,6 +1,7 @@
 package blackjack;
 
 import java.util.ArrayList;
+import java.util.List;
 
 // Represents a single Black Jack Table
 // Has the ability to interact with a user as a real table would
@@ -11,6 +12,8 @@ public class BlackJackTable extends Table implements Visualize {
     Integer maxSeats = 3; // Max seats available at the table
     Seat dealer;
     Shoe shoe;
+    History<BlackJackTable, String> seat_history = new History<>();
+
 
     public BlackJackTable(Integer minSeats, Integer maxSeats, Integer numDecks) {
         this.maxSeats = maxSeats;
@@ -18,6 +21,7 @@ public class BlackJackTable extends Table implements Visualize {
         this.numDecks = numDecks;
         this.dealer = new Seat();
         this.dealer.makeDealer();
+        seat_history.add(this);
         this.setupSeats();
     }
 
@@ -45,6 +49,11 @@ public class BlackJackTable extends Table implements Visualize {
 
     }
 
+    @Override
+    public String toString() {
+        return "Black Jack Table";
+    }
+
     // Private Logic Loop Helpers
 
     // Makes a new Shoe
@@ -57,6 +66,43 @@ public class BlackJackTable extends Table implements Visualize {
             this.dealHand();
             this.displayAllCardsOnTable(false);
             this.waitInput();
+            this.loopPlayersTurns();
+        }
+    }
+
+    // Loops through each player and prompts them for their move
+    private void loopPlayersTurns () {
+        for (Seat s: this.seats) {
+            if (s.occupied) {
+                Player current_player = s.getPlayerObject();
+                History<Player, String> p_history = current_player.getHistoryWrapper();
+                this.printStatus("Starting User " + s.getPlayer() + " turn");
+                Integer hit_stand_response = 0;
+                while (hit_stand_response == 0) {
+                    ArrayList<Integer> current_value = s.getValue();
+                    StringBuilder prompt = new StringBuilder();
+                    prompt.append("Hand Total: ");
+                    for (Integer i=0; i< current_value.size(); ++i) {
+                        prompt.append(current_value.get(i));
+                        if (i != current_value.size()-1){
+                            prompt.append(" or ");
+                        }
+                    }
+                    prompt.append(". What do you do?");
+                    this.printPrompt(prompt.toString());
+                    hit_stand_response = current_player.getDecision(new ArrayList<>(List.of("Hit", "Stand")));
+                    if (hit_stand_response == 1) {
+                        this.printBasic("User: " + s.getPlayer() + " stays.");
+                        p_history.addItem("Stays");
+                    } else {
+                        this.printBasic("User: " + s.getPlayer() + " hits.");
+                        p_history.addItem("Hits");
+//                      TODO: Get card, display card, check bust
+                        this.shoe.dealCard(s);
+                        this.displaySeatsWithCards();
+                    }
+                }
+            }
         }
     }
 
@@ -84,7 +130,7 @@ public class BlackJackTable extends Table implements Visualize {
         this.printSpacer();
         this.printPrompt("Would you like to change the seats?");
         this.printSpacer();
-        Integer i = this.waitResponse(new String[]{"Yes", "No"});
+        Integer i = this.waitResponse(new ArrayList<>(List.of("Yes", "No")));
         return i == 0;
     }
 
@@ -96,11 +142,11 @@ public class BlackJackTable extends Table implements Visualize {
         for (Seat s: this.seats) {
             currentSeats.add(s.getPlayer());
         }
-        Integer seatNum = this.waitResponse(currentSeats.toArray());
+        Integer seatNum = this.waitResponse(currentSeats);
         this.printSpacer();
         this.printPrompt("Who would you like to sit in seat #" + (seatNum + 1) + "?");
         this.printSpacer();
-        Integer playerId = this.waitResponse(possible_players.toArray(), "Clear Player");
+        Integer playerId = this.waitResponse(possible_players, "Clear Player");
         if (playerId >= possible_players.size()) {
             this.leave(seatNum);
         } else {
@@ -111,6 +157,7 @@ public class BlackJackTable extends Table implements Visualize {
     // If the player is already occupying more than 2 seats an exception is thrown
     private void sit(Player p, Integer i) throws MaxSeatExeception {
         if (this.checkCanSit(p, i, 2)) {
+            seat_history.addItem("Player: " + p + " enters seat #" + i);
             this.seats.get(i).addPlayer(p);
         } else {
             throw new MaxSeatExeception(2);
@@ -128,6 +175,7 @@ public class BlackJackTable extends Table implements Visualize {
     }
 
     private void leave(Integer i) {
+        seat_history.addItem("Player: " +  this.seats.get(i).getPlayer() + " leaves seat #" + i);
         this.seats.get(i).removePlayer();
     };
 
@@ -137,7 +185,7 @@ public class BlackJackTable extends Table implements Visualize {
     private void displaySeats() {
         this.printSpacer();
         this.printTitle("Seats");
-        this.printHorizontalOptions(this.seats.toArray());
+        this.printHorizontalOptions(this.seats);
         this.printSpacer();
     }
 
@@ -162,7 +210,7 @@ public class BlackJackTable extends Table implements Visualize {
     private void displaySeatsWithCards() {
         this.printSpacer();
         this.printTitle("Current Cards");
-        this.printHorizontalOptions(this.seats.toArray());
+        this.printHorizontalOptions(this.seats);
         Integer counter = 0;
         Boolean still_cards = true;
         while (still_cards) {
@@ -176,7 +224,7 @@ public class BlackJackTable extends Table implements Visualize {
                 current_cards_for_row.add(card);
             }
             if (still_cards) {
-                this.printHorizontalOptions(current_cards_for_row.toArray(), false);
+                this.printHorizontalOptions(current_cards_for_row, false);
             }
             counter++;
         }
@@ -189,9 +237,11 @@ public class BlackJackTable extends Table implements Visualize {
 
         ArrayList<Card> cards = this.dealer.cards;
         if (showAll) {
-            this.printHorizontalOptions(cards.toArray(), false);
+            this.printHorizontalOptions(cards, false);
         } else {
-            Object[] show = { cards.get(0), "Hidden" };
+            ArrayList<Object> show = new ArrayList<>();
+            show.add(cards.get(0));
+            show.add("Hidden");
             this.printVerticalOptions(show, false);
         }
     }

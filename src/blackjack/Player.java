@@ -7,6 +7,7 @@ import java.util.ArrayList;
 public class Player {
     String name;
     Double money;
+    History<Player, String> player_history = new History<>();
 
     public Player(String name, Double money){
         this.name = name;
@@ -18,15 +19,14 @@ public class Player {
     public void receiveWinning(Double x) {
         this.money = this.money + x;
     }
-    public Integer getDecision(String prompt, ArrayList<String> options) {
-        return 0;
-    }
+    public Integer getDecision(ArrayList<String> options) { return 0; }
     public String getName() {
         return this.name;
     }
     public Double getMoney() {
         return this.money;
     }
+    public History<Player, String> getHistoryWrapper() { return this.player_history; }
     @Override
     public String toString() {
         return this.name;

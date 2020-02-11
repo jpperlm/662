@@ -10,7 +10,7 @@ public class main {
     private static void run_table() {
         Player random_player_1 = new RandomPlayer("Random P1", 100.0);
         Player random_player_2 = new RandomPlayer("Random P2", 100.0);
-        Player user_player = new RandomPlayer("User (you)", 100.0);
+        Player user_player = new UserPlayer("Jason (you)", 100.0);
 
         ArrayList<Player> players = new ArrayList<>();
         players.add(random_player_1);

@@ -1,5 +1,7 @@
 package blackjack;
 
+import java.util.ArrayList;
+
 // Represents a playing card
 // The card is created to accept values typically used for a deck of 52 playing cards but
 //  is left abstract enough that it could be used for other games as the code expands
@@ -10,13 +12,26 @@ public class Card {
     String long_value; // The full name for the value, 1=>Ace, 2=>Two, 13=>King
     String short_suit; // The short suit H, S, C, D
     String long_suit; // The long suit, Hearts, Spades, Clubs, Diamonds
+    ArrayList<Integer> possibleValues;
 
-    public Card(Integer v, String sv, String lv, String ss, String ls){
+    public Card(Integer v, String sv, String lv, String ss, String ls, ArrayList<Integer> possibleValues){
         this.value = v;
         this.short_value = sv;
         this.long_value = lv;
         this.short_suit = ss;
         this.long_suit = ls;
+        this.possibleValues = possibleValues;
+    }
+
+    public Card(Integer v, String sv, String lv, String ss, String ls, Integer pv){
+        this.value = v;
+        this.short_value = sv;
+        this.long_value = lv;
+        this.short_suit = ss;
+        this.long_suit = ls;
+        ArrayList<Integer> vals = new ArrayList<>();
+        vals.add(pv);
+        this.possibleValues = vals;
     }
 
     // Getters
@@ -40,6 +55,16 @@ public class Card {
         return this.long_value;
     }
 
+    public Boolean hasMultipleValues() {
+        return this.possibleValues.size() > 1;
+    }
+
+    public Integer getSingleValue() {
+        return this.possibleValues.get(0);
+    }
+    public ArrayList<Integer> getPossibleValues() {
+        return this.possibleValues;
+    }
     // Gets the 'Count' of the card in reference to card counting
     // 2-6 = 1
     // 10-K & A = -1

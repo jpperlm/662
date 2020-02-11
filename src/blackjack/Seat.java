@@ -54,6 +54,27 @@ public class Seat {
         }
     }
 
+    public ArrayList<Integer> getValue() {
+        ArrayList<Integer> possibleValues = new ArrayList<>();
+        possibleValues.add(0);
+        for (Card c: this.cards) {
+            ArrayList<Integer> newValues = new ArrayList<>();
+            if (c.hasMultipleValues()) {
+                for (Integer v: c.getPossibleValues()) {
+                    for (Integer i: possibleValues) {
+                        newValues.add(i+v);
+                    }
+                }
+            } else {
+                for (Integer i: possibleValues) {
+                    newValues.add(i + c.getSingleValue());
+                }
+            }
+            possibleValues = newValues;
+        }
+        return possibleValues;
+    }
+
     public Player getPlayerObject() {
         return this.player;
     }

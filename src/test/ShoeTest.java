@@ -12,9 +12,9 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class ShoeTest {
     @Test
     public void testCountWorks() {
-        Card c_1 = new  Card(1, "A", "Ace", "H", "Hearts");
-        Card c_2 = new Card(7, "7", "Seven", "H", "Hearts");
-        Card c_3 = new  Card(2, "2", "Two", "H", "Hearts");
+        Card c_1 = new  Card(1, "A", "Ace", "H", "Hearts", 1);
+        Card c_2 = new Card(7, "7", "Seven", "H", "Hearts", 7);
+        Card c_3 = new  Card(2, "2", "Two", "H", "Hearts", 2);
         Seat s = new Seat();
         ArrayList<Card> cards = new ArrayList<>();
         cards.add(c_1);

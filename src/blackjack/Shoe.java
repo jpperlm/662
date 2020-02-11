@@ -42,8 +42,6 @@ public class Shoe {
     public Boolean isPlayable() {
         return this.currentCard < this.cards.size() / 2;
     }
-
-
     //    Actions
 
     // Deals a card to the Seat passed thru the params
